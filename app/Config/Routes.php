@@ -31,10 +31,11 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get(from:'/', to: 'Home::index');
-$routes->get(from:'/hello', to: 'selamatdatang::hal_awal');
-$routes->get(from:'/login', to: 'selamatdatang::beranda_login');
-$routes->get(from:'/daftar-member', to: 'selamatdatang::daftar_member');
+$routes->get('/', 'Home::index');
+$routes->get('/hello', 'selamatdatang::hal_awal');
+$routes->get('/login', 'selamatdatang::beranda_login');
+$routes->get('/daftar-member','selamatdatang::daftar_member');
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing
