@@ -34,8 +34,8 @@ $routes->setAutoRoute(true);
 $routes->get('/', 'Home::index');
 $routes->get('/hello', 'selamatdatang::hal_awal');
 $routes->get('/login', 'selamatdatang::beranda_login');
-$routes->get('/daftar-member','selamatdatang::daftar_member');
-
+$routes->post('/login', 'Login::cekLogin');
+$routes->get('/daftar-member', 'selamatdatang::daftar_member');
 /*
  * --------------------------------------------------------------------
  * Additional Routing
